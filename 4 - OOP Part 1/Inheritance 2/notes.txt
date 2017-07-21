@@ -1,0 +1,2 @@
+1) You can use super.method to call a method on the super class
+2) You can use super() to call any constructor

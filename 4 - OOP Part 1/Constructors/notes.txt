@@ -1,0 +1,51 @@
+If the two strings contain the same characters in the same order,
+the equals() method returns true. Otherwise, it returns a false value. ...
+Main difference between == and equals in Java is that "==" is used to compare
+primitives while equals() method is recommended to check equality of objects.
+
+
+In Java, the constructor is not a method.
+It only has the name of the class and a specific visibility.
+If it declares that returns something, then it is not a constructor,
+not even if it declares that returns a  void
+
+
+Check file Account.java for notes
+
+
+long i = 10;
+
+i == 10;
+
+Dog test = new Dog()
+Dog test2 = new Dog()
+
+class Object() {
+	public 
+}
+
+class Dog extends Object {
+	private long id;
+	private String name;
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}
+
+class Terrier extends Dog {
+
+	public void setName(String name) {
+		this.name = name + " teste";
+	}
+}
+
+
+Dog dog = new Dog() ===> id = 1
+Dog dog2 = new Dog() ===> id = 2
+
+dog == dog2
+
+
+

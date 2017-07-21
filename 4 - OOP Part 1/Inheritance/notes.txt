@@ -1,0 +1,4 @@
+It's only good practice, which
+
+helps developers see which methods are overriden
+lets the compiler check that the signature is compliant with the overriden method

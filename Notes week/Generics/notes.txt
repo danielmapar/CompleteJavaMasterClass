@@ -1,0 +1,4 @@
+diamond syntax 
+
+List<String> test = new ArrayList<>(); 
+java 8

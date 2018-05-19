@@ -1,0 +1,24 @@
+shallow copy
+
+
+List<Type> list = new ArrayList<>(otherArrayList);
+
+Anonymous inner class 
+
+public interface F<A, B> {
+   B f(A a);
+}
+
+F<Integer, Boolean> greaterThanTen = new F<Integer, Boolean> {
+   Boolean f(final Integer n) {
+      return n > 10;
+   }
+};
+int moreThanMyFingersCanCount = firstMatch(xs, greaterThanTen, x);
+
+public static <T> T firstMatch(final List<T> ts, final F<T, Boolean> f, T z) {
+   for (T t : ts)
+      if (f.f(t))
+         return t;
+   return z;
+}
